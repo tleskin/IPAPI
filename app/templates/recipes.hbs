@@ -1,1 +1,11 @@
-{{outlet}}
+<center>
+{{#each recipe in model}}
+  <div class="recipe">
+    <strong>{{recipe.name}}</strong>
+    <p>{{recipe.description}}</p>
+    <p>{{recipe.gravity}}</p>
+    <p>{{recipe.time_to_make}}</p>
+    <p>{{recipe.instructions}}</p>
+  </div>
+{{/each}}
+</center>
