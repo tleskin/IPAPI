@@ -1,8 +1,10 @@
-<center>
-{{#each type in model}}
-  <div class="type">
-    <strong>{{type.name}}</strong><br>
-    <img src="{{type.image}}">
+<div class='container'>
+  <div class='row'>
+    {{#each type in model}}
+      <div class="type col m4">
+        <img src="{{type.image}}">
+        <h5 class='center-align'>{{type.name}}</h5>
+      </div>
+    {{/each}}
   </div>
-{{/each}}
-</center>
+</div>
